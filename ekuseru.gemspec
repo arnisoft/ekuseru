@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
   s.summary = %q{Export excel documents from Rails}
    
   s.add_dependency 'rails', '>=3.0'
-  s.add_dependency 'spreadsheet', '~> 0.6.5.9'
+  s.add_dependency 'spreadsheet', '>=0.6.5.9'
 
 end
