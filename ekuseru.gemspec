@@ -2,11 +2,11 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = %q{ekuseru}
-  s.version = "0.3.10"
+  s.version = "0.3.10.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nugroho Herucahyono", "Jacob Rothstein"]
-  s.date = %q{2011-11-21}
+  s.date = %q{2020-12-27}
   s.description = %q{Ekuseru is a gem to generate Microsoft Excel documents with Rails. This plugin provides templating abilities to create excel documents using Spreadsheet gem.}
   s.email = %q{xinuc@xinuc.org}
   s.extra_rdoc_files = [
@@ -24,4 +24,3 @@ Gem::Specification.new do |s|
   s.add_dependency 'spreadsheet', '~> 0.6.5.9'
 
 end
-

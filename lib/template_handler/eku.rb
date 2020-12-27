@@ -3,11 +3,11 @@ require 'action_view'
 module Ekuseru
   module TemplateHandler
     class Eku
-      def call template
+      def call(template, source = nil)
         %{
           _ekuseru_setup
           xls = Spreadsheet::Workbook.new
-          #{template.source}
+          #{ source || template.source }
           @_ekuseru_options.set_disposition(__filename ||= nil)
           io = StringIO.new
           xls.write(io)
